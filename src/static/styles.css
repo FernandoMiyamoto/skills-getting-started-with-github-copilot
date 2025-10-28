@@ -87,12 +87,21 @@ section h3 {
   padding: 4px 0;
   color: #555;
   font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.participants-list li:before {
-  content: "•";
-  color: #1a237e;
-  margin-right: 8px;
+.delete-participant {
+  color: #dc3545;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
 }
 
 .form-group {
